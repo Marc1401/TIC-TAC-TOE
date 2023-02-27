@@ -134,3 +134,62 @@
     transform: scale(1.25);
     filter: brightness(120%);
 }
+
+
+.player1, .player2 {
+    display: flex;
+}
+
+h5 {
+    /* padding: 1px; */
+    padding-left: .2rem;
+    font-size: 1.1rem;
+}
+
+
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 24vw;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -12vw;
+    margin-bottom: -10vh;;
+}
+  
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
