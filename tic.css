@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+.game-title
+{
+    padding-top: 25px;
+    font-size: 35px;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    text-align: center;
+    
+}
+.presentation {
+    
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+}
+
+.pX{
+    color: red;
+  }
+  
+.pO{
+    color: blue;
+}
