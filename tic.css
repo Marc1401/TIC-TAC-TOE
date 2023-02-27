@@ -114,3 +114,23 @@
     border-radius: 10px;
 
 }
+
+.reset {
+    margin-top: 5vw;
+    background-color: rgb(204, 206, 206);
+    margin: 1rem;
+    transition: all 0.5s ease;
+    transform: scale(1);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 8px;
+}
+
+.reset:hover {
+    background-color: rgb(221, 221, 221);
+    transition: all 0.3s;
+    cursor: pointer;
+    transform: scale(1.25);
+    filter: brightness(120%);
+}
