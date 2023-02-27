@@ -76,3 +76,94 @@ function showPopup(message) {
         popup.classList.remove('show');
     }, 3000);
 }
+
+
+firstPlayerName == undefined ? 'Player 1' : firstPlayerName;
+secondPlayerName == undefined ? 'Player 2' : secondPlayerName;
+
+function checkWinner() {
+    if (btn1.innerHTML === 'X' && btn2.innerHTML === 'X' && btn3.innerHTML === 'X') {
+        // alert('Player 1 wins!');
+        showPopup(`${firstPlayerName} wins!`);
+        firstPlayerScore.innerHTML = parseInt(firstPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn1.innerHTML === 'O' && btn2.innerHTML === 'O' && btn3.innerHTML === 'O') {
+        // alert('Player 2 wins!');
+        showPopup(`${secondPlayerName} wins!`);
+        secondPlayerScore.innerHTML = parseInt(secondPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn4.innerHTML === 'X' && btn5.innerHTML === 'X' && btn6.innerHTML === 'X') {
+        // alert('Player 1 wins!');
+        showPopup(`${firstPlayerName} wins!`);
+        firstPlayerScore.innerHTML = parseInt(firstPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn4.innerHTML === 'O' && btn5.innerHTML === 'O' && btn6.innerHTML === 'O') {
+        // alert('Player 2 wins!');
+        showPopup(`${secondPlayerName} wins!`);
+        secondPlayerScore.innerHTML = parseInt(secondPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn7.innerHTML === 'X' && btn8.innerHTML === 'X' && btn9.innerHTML === 'X') {
+        // alert('Player 1 wins!');
+        showPopup(`${firstPlayerName} wins!`);
+        firstPlayerScore.innerHTML = parseInt(firstPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn7.innerHTML === 'O' && btn8.innerHTML === 'O' && btn9.innerHTML === 'O') {
+        // alert('Player 2 wins!');
+        showPopup(`${secondPlayerName} wins!`);
+        secondPlayerScore.innerHTML = parseInt(secondPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn1.innerHTML === 'X' && btn4.innerHTML === 'X' && btn7.innerHTML === 'X') {
+        // alert('Player 1 wins!');
+        showPopup(`${firstPlayerName} wins!`);
+        firstPlayerScore.innerHTML = parseInt(firstPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn1.innerHTML === 'O' && btn4.innerHTML === 'O' && btn7.innerHTML === 'O') {
+        // alert('Player 2 wins!');
+        showPopup(`${secondPlayerName} wins!`);
+        secondPlayerScore.innerHTML = parseInt(secondPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn2.innerHTML === 'X' && btn5.innerHTML === 'X' && btn8.innerHTML === 'X') {
+        // alert('Player 1 wins!');
+        showPopup(`${firstPlayerName} wins!`);
+        firstPlayerScore.innerHTML = parseInt(firstPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn2.innerHTML === 'O' && btn5.innerHTML === 'O' && btn8.innerHTML === 'O') {
+        // alert('Player 2 wins!');
+        showPopup(`${secondPlayerName} wins!`);
+        secondPlayerScore.innerHTML = parseInt(secondPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn3.innerHTML === 'X' && btn6.innerHTML === 'X' && btn9.innerHTML === 'X') {
+        // alert('Player 1 wins!');
+        showPopup(`${firstPlayerName} wins!`);
+        firstPlayerScore.innerHTML = parseInt(firstPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn3.innerHTML === 'O' && btn6.innerHTML === 'O' && btn9.innerHTML === 'O') {
+        // alert('Player 2 wins!');
+        showPopup(`${secondPlayerName} wins!`);
+        secondPlayerScore.innerHTML = parseInt(secondPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn1.innerHTML === 'X' && btn5.innerHTML === 'X' && btn9.innerHTML === 'X') {
+        // alert('Player 1 wins!');
+        showPopup(`${firstPlayerName} wins!`);
+        firstPlayerScore.innerHTML = parseInt(firstPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn1.innerHTML === 'O' && btn5.innerHTML === 'O' && btn9.innerHTML === 'O') {
+        // alert('Player 2 wins!');
+        showPopup(`${secondPlayerName} wins!`);
+        secondPlayerScore.innerHTML = parseInt(secondPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn3.innerHTML === 'X' && btn5.innerHTML === 'X' && btn7.innerHTML === 'X') {
+        // alert('Player 1 wins!');
+        showPopup(`${firstPlayerName} wins!`);
+        firstPlayerScore.innerHTML = parseInt(firstPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (btn3.innerHTML === 'O' && btn5.innerHTML === 'O' && btn7.innerHTML === 'O') {
+        // alert('Player 2 wins!');
+        showPopup(`${secondPlayerName} wins!`);
+        secondPlayerScore.innerHTML = parseInt(secondPlayerScore.innerHTML) + 1;
+        reset();
+    } else if (counter === 9) {
+        showPopup('Draw!');
+        reset();
+    }
+}
