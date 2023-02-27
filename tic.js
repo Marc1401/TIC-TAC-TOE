@@ -167,3 +167,19 @@ function checkWinner() {
         reset();
     }
 }
+
+
+function reset() {
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].innerHTML = '';
+        buttons[i].style.color = 'black';
+        buttons[i].style.fontSize = '30px';
+        buttons[i].style.fontWeight = 'normal';
+        buttons[i].style.textAlign = 'center';
+        buttons[i].style.border = '0.1px solid black';
+        buttons[i].style.backgroundColor = 'white';
+        buttons[i].style.cursor = 'pointer';
+        buttons[i].style.pointerEvents = 'auto';
+    }
+    counter = 0;
+}
