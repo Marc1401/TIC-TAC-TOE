@@ -66,3 +66,13 @@ for (let i = 0; i < buttons.length; i++) {
 
     });
 }
+
+function showPopup(message) {
+    let popup = document.getElementById('myPopup');
+    popup.innerText = message;
+    popup.classList.toggle('show');
+
+    setTimeout(function () {
+        popup.classList.remove('show');
+    }, 3000);
+}
