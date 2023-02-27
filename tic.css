@@ -193,3 +193,30 @@ h5 {
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
 }
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+
+@media only screen and (max-width: 480px ) {
+    .popup .popuptext {
+        margin-left: -17vw;
+        margin-bottom: -10vh;
+        width: 35vw;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
